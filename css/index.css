@@ -150,11 +150,6 @@ body {
   width: 90%;
   margin: auto;
 }
-@media (max-width: 500px) {
-  .container {
-    width: 100%;
-  }
-}
 .container .copyright {
   text-align: center;
   color: #1BB1CC;
@@ -164,7 +159,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap row;
-  background: backgroundObelix;
+  color: backgroundObelix;
 }
 .navigation a {
   margin: 2rem;
@@ -276,4 +271,64 @@ body {
   justify-content: space-evenly;
   padding: 1em;
   margin-bottom: 2em;
+}
+.contact-section {
+  background: #1BB1CC;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 2%;
+  padding: 40px 0;
+}
+.contact-section h1 {
+  text-align: center;
+  color: #ddd;
+}
+.border {
+  width: 100px;
+  height: 10px;
+  background: #0b9dc1;
+  margin: 40px auto;
+}
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.contact-form .contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: white;
+  padding: 20px 40px;
+  outline: none;
+  color: white;
+  transition: 0.5s;
+}
+.contact-form .contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
+}
+.contact-form textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+.contact-form .contact-form-btn {
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form .contact-form-btn:hover {
+  background: #2980b9;
+}
+.image-contact {
+  border: 2px solid white;
+  position: absolute;
+  right: 67em;
 }
